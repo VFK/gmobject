@@ -13,6 +13,10 @@ This module can help you do this by creating "mapping rules" for each such objec
  - [Copy properties](#copy-properties-as-is)
  - [Make new properties from any number of old properties](#make-new-properties-from-any-number-of-old-properties)
 - [Available methods](#available-methods)
+ - [add](#addstring-property)
+ - [use](#useargs)
+ - [handler](#handlerfunction)
+ - [parse](#gmoparseobject--object)
 - [Step by step](#step-by-step)
 - [Notes](#notes)
 

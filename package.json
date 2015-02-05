@@ -1,7 +1,7 @@
 {
   "name": "gmobject",
   "version": "1.0.0",
-  "description": "Create object using properties of another object",
+  "description": "Create javascript objects using properties of another object.",
   "main": "./lib/mapper.js",
   "devDependencies": {
     "mocha": "^2.1.0",

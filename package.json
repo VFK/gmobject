@@ -1,0 +1,28 @@
+{
+  "name": "gmobject",
+  "version": "1.0.0",
+  "description": "Create object using properties of another object",
+  "main": "./lib/mapper.js",
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "istanbul": "^0.3.5",
+    "coveralls": "^2.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VFK/gmobject.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "author": {
+    "name": "Vladimir Kucherenko",
+    "email": "kvsoftware@gmail.com"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R dot",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R dot && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "license": "MIT"
+}

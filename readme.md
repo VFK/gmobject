@@ -1,4 +1,5 @@
-# GMObject
+# GMObject [![NPM version](http://img.shields.io/npm/v/gmobject.svg)](https://npmjs.org/package/gmobject) [![Build status](http://img.shields.io/travis/VFK/gmobject.svg)](https://travis-ci.org/VFK/gmobject) [![Coverage Status](http://img.shields.io/coveralls/VFK/gmobject.svg)](https://coveralls.io/r/VFK/gmobject)
+
 > Create javascript objects using properties of another object.
 
 Let's say you're gathering data as js objects from different sources. Chances are those objects are different from each other and you need to normalize them all.

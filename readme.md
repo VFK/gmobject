@@ -142,7 +142,7 @@ gmo.add('anotherKey').use('old').handler(function(old){
 })
 
 var newObject = gmo.parse(oldObject); // Call "parse" to return new mapped object
-// newObject === {key: 123, anotherKey: 468}
+// newObject === {key: 123, anotherKey: 467}
 ```
 ## Notes
 1. You can be explicit and always go full chain `add` => `use` => `handler` or you can use some magic.

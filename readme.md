@@ -24,11 +24,13 @@ This module can help you do this by creating "mapping rules" for each such objec
 
 ## Usage
 Install:
+
 ```shell
 npm install --save gmobject
 ```
 
 Require:
+
 ```javascript
 var GMObject = require('gmobject');
 
@@ -36,6 +38,7 @@ var gmo = new GMObject();
 ```
 
 Have your object ready:
+
 ```javascript
 var myObject = {
     first: 'Hello',
@@ -45,6 +48,7 @@ var myObject = {
 ```
 
 Make some mapping rules:
+
 ```javascript
 gmo.add('computedProperty')
     .use('first', 'second')
@@ -57,6 +61,7 @@ gmo.add('meaningOfLife').use('meaninglessNumber');
 var result = gmo.parse(myObject);
 // result = {computedProperty: 'Hello, world!', meaningOfLife: 42}
 ```
+
 
 ## What you can do
 ##### Add properties
@@ -147,18 +152,22 @@ var newObject = gmo.parse(oldObject); // Call "parse" to return new mapped objec
 ## Notes
 1. You can be explicit and always go full chain `add` => `use` => `handler` or you can use some magic.
 For example to rename a property you can do this:
+
 ```javascript
 gmo.add('renamed').use('oldProp').handler(function(oldProp) {
     return oldProp;
 })
 ```
+
 or you can skip a step:
+
 ```javascript
 gmo.add('renamed').use('oldProp');
 ```
 Look at [tests](https://github.com/VFK/gmobject/blob/master/test/test.js) to get the idea.
 
 2. Properties are not automatically copied to the new object. To create a property you need to explicitly `add` it or you can just grab everything you need from the old object using magic:
+
 ```javascript
 gmo.use('oldValue', 'anotherValue', 'someOtherValue')
 ```
